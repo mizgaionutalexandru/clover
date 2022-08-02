@@ -2,9 +2,9 @@
   "name": "clover-landing-page",
   "version": "1.0.0",
   "description": "landing page built with tailwind and html",
-  "main": "index.html",
+  "main": "./src/index.html",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "start": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "repository": {
     "type": "git",
