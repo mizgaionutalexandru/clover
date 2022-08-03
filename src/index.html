@@ -7,15 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
     <link href="output.css" rel="stylesheet" />
     <title>Clover - landing page</title>
+
+    <script defer src="script.js"></script>
   </head>
   <!-- prettier-ignore -->
-  <body class="pt-3 px-4 font-sans text-[#000000]">
-    <header class="flex justify-between items-center">
+  <body class="pt-3 px-4 font-sans text-[#000000] relative">
+    <header class="flex justify-between items-center z-40">
       <h1
         class=" text-xl font-extrabold align-middle relative
       before:bg-yellow-2 before:w-9/12 before:h-1/5 before:absolute before:right-0 before:bottom-2
@@ -24,6 +26,7 @@
       >
       <svg
         class="w-7 h-7"
+        id="menu-open"
         viewBox="0 0 29 25"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +44,20 @@
           fill="black"
         />
       </svg>
+      <svg class="w-7 h-7 hidden" id="menu-close" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.693279 0.754497C1.13776 0.310569 1.74027 0.0612183 2.36848 0.0612183C2.99668 0.0612183 3.59919 0.310569 4.04367 0.754497L14.2213 10.9321L24.3989 0.754497C24.6159 0.521592 24.8776 0.334785 25.1684 0.205219C25.4592 0.0756541 25.7731 0.0059849 26.0914 0.000368926C26.4097 -0.00524704 26.7259 0.0533047 27.021 0.172531C27.3162 0.291758 27.5844 0.469217 27.8095 0.694322C28.0346 0.919426 28.212 1.18757 28.3313 1.48274C28.4505 1.77792 28.509 2.09408 28.5034 2.41238C28.4978 2.73068 28.4281 3.04458 28.2986 3.33537C28.169 3.62616 27.9822 3.88787 27.7493 4.10489L17.5717 14.2825L27.7493 24.4601C27.9822 24.6771 28.169 24.9388 28.2986 25.2296C28.4281 25.5204 28.4978 25.8343 28.5034 26.1526C28.509 26.4709 28.4505 26.7871 28.3313 27.0823C28.212 27.3774 28.0346 27.6456 27.8095 27.8707C27.5844 28.0958 27.3162 28.2732 27.021 28.3925C26.7259 28.5117 26.4097 28.5703 26.0914 28.5646C25.7731 28.559 25.4592 28.4893 25.1684 28.3598C24.8776 28.2302 24.6159 28.0434 24.3989 27.8105L14.2213 17.6329L4.04367 27.8105C3.59429 28.2292 2.99993 28.4572 2.38579 28.4464C1.77165 28.4355 1.1857 28.1867 0.751368 27.7524C0.31704 27.3181 0.0682511 26.7321 0.0574154 26.118C0.0465796 25.5039 0.274543 24.9095 0.693279 24.4601L10.8709 14.2825L0.693279 4.10489C0.24935 3.66041 0 3.05789 0 2.42969C0 1.80149 0.24935 1.19898 0.693279 0.754497Z" fill="black"/>
+      </svg>
+      <div id='navbar' class=" hidden absolute px-4 top-14 left-0 bg-[#ffffff] w-[100vw]
+       text-base pt-6 pb-8 shadow-md z-30">
+        <ul class="font-normal">
+          <li class="pb-4"><a href="#">About</a></li>
+          <li class="pb-4"><a href="#">Services</a></li>
+          <li class="pb-4"><a href="#">Pricing</a></li>
+          <li class="pb-6"><a href="#">Account</a></li>
+        </ul>
+        <a href="#" class="mr-9 font-medium">Login</a>
+        <a href="#" class="py-2 px-6 bg-yellow-2 font-medium">Sign up</a>
+      </div>
     </header>
     <section class="py-16">
       <h2 class="font-medium text-3xl">Gain clarity over <br>
