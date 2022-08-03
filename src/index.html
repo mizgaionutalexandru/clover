@@ -59,22 +59,25 @@
         <a href="#" class="py-2 px-6 bg-yellow-2 font-medium">Sign up</a>
       </div>
     </header>
-    <section class="py-16">
-      <h2 class="font-medium text-3xl">Gain clarity over <br>
+    <section class="py-16 sm:grid sm:grid-cols-2 sm:grid-rows-4">
+      <h2 class="font-medium text-3xl sm:self-center">Gain clarity over <br>
        your <span class="relative before:bg-yellow-2 before:w-[105%]
        before:h-1/5 before:absolute before:left-0 before:bottom-2
        before:-z-10">
         marketing </span> <br> decisions.
       </h2>
-      <img class="max-w-[300px] py-4" src="./assets/illustration.png" alt="Illustration of a
+      <img class="max-w-sm w-full py-4 sm:col-start-2 sm:row-start-1 sm:row-end-3" src="./assets/illustration.png" alt="Illustration of a
        guy thinking, having and idea in front of an interactive whiteboard">
-      <p class="py-8 text-base">Clover helps you manage every step of your marketing activites.
-      <span class="font-semibold">From briefing to presenting your results.</span>
-      </p>
-      <a href="#" class="text-base bg-yellow-1 py-2 px-4 cursor-pointer">Get started</a>
+      <div class="sm:row-start-2 sm:row-end-3 sm:self-start">
+        <p class="py-8 text-base">Clover helps you manage every step of your marketing activites.
+          <span class="font-semibold">From briefing to presenting your results.</span>
+        </p>
+        <a href="#" class="text-base bg-yellow-1 py-2 px-4 cursor-pointer">Get started</a>
+      </div>
       <div class="bg-yellow-1 py-5 px-5 mt-20 relative
       before:bg-[#000000] before:w-[95%] before:h-full before:absolute
-       before:-z-10 before:-top-2.5 before:-left-2.5">
+       before:-z-10 before:-top-2.5 before:-left-2.5
+       sm:row-start-3 sm:row-end-5 sm:w-10/12 sm:mt-0 sm:self-center">
         <h3 class="text-2xl font-semibold">Measure KPIs</h3>
         <p class="font-medium py-11">Manage, distribution of budget, by brand, product, quarter, campaign and see
           time tracking.</p>
@@ -87,7 +90,8 @@
       </div>
       <div class="bg-yellow-1 py-5 px-5 mt-20 relative
       before:bg-[#000000] before:w-[95%] before:h-full before:absolute
-       before:-z-10 before:-top-2.5 before:-left-2.5">
+       before:-z-10 before:-top-2.5 before:-left-2.5
+       sm:row-start-3 sm:row-end-5 sm:w-10/12 sm:mt-0 sm:self-center">
         <h3 class="text-2xl font-semibold">Budget control</h3>
         <p class="font-medium py-11">Track ROI and make adjustments as necessary to get the mosst from your 
           media investment.</p>
