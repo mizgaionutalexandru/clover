@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-item--basic {
+    @apply before:w-full before:h-0.5 before:absolute relative before:top-full before:left-0
+      before:bg-[#000] before:rounded-sm before:origin-left before:scale-x-0
+      hover:before:scale-x-100 before:transition-all before:duration-300
+      transition-all active:text-yellow-3 active:before:bg-yellow-3;
+  }
+
+  .nav-item--login {
+    @apply mr-9 font-medium before:w-full before:h-0.5 before:absolute relative before:top-full before:left-0
+    before:bg-[#000] before:rounded-sm before:origin-left before:scale-x-0
+    hover:before:scale-x-110 before:transition-all before:duration-300
+    transition-all active:text-yellow-3 active:before:bg-yellow-3;
+  }
+
+  .nav-item--signup {
+    @apply py-2 px-6 bg-yellow-2 font-medium hover:bg-yellow-3 transition-all
+    outline-2 active:outline-4 outline-offset-2 active:outline outline-yellow-3;
+  }
+
+  .features {
+    @apply bg-yellow-1 py-5 px-5 mt-20 relative
+    before:bg-[#000000] before:w-[95%] before:h-full before:absolute
+     before:-z-10 before:-top-2.5 before:-left-2.5
+      sm:col-span-2 sm:w-10/12 sm:mt-0 sm:self-center sm:justify-self-center
+      sm:h-[90%] sm:my-3 lg:max-w-xs lg:h-auto lg:self-end lg:justify-self-start lg:ml-2.5;
+  }
+
+  .features__cta {
+    @apply inline-flex gap-1.5 items-center cursor-pointer
+        before:w-full before:h-1 before:absolute relative before:top-full before:left-0
+        before:bg-[#ffffff] before:rounded-sm before:origin-left before:scale-x-0
+        hover:before:scale-x-110 before:transition-all before:duration-300
+        transition-all active:before:bg-yellow-3;
+  }
+}
