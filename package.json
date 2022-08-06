@@ -4,7 +4,8 @@
   "description": "landing page built with tailwind and html",
   "main": "./src/index.html",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "start": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
   },
   "repository": {
     "type": "git",
