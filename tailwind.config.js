@@ -1,13 +1,14 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./src/**/*.{html,js}'],
   theme: {
     fontFamily: {
-      sans: ["Poppins", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      sans: ['Poppins', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
     },
     colors: {
-      "yellow-1": "#ffe600",
-      "yellow-2": "#ffe605",
+      'yellow-1': '#ffe600',
+      'yellow-2': '#ffe605',
+      'yellow-3': '#eed600',
     },
     extend: {},
   },
